@@ -40,7 +40,7 @@ class DatabaseConection:
         sql_query = "DELETE FROM userticket;"
         self.cursor.execute(sql_query)
         self.conn.commit()
-        
+
 
 
 

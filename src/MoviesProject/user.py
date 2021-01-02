@@ -8,5 +8,3 @@ class User:
         self.gender = gender
         self.ticketprice = ticketprice
         self.ticketnumber = ticketnumber
-
-    
