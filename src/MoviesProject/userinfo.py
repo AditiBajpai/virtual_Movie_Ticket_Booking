@@ -1,6 +1,4 @@
 
-
-
 class UserInformation:
     def __init__(self,bt):
         self.bt = bt
@@ -17,9 +15,8 @@ class UserInformation:
             print("The provided ticket number does not exist")
 
     def display_details(self,data):
-        print(data.name )
-        print(data.age)
-        print(data.phone)
-        print(data.gender)
-        print(data.ticketprice)
-        
+        print("NAME : ",data.name )
+        print("AGE : ",data.age)
+        print("PHONE NUMBER : ", data.phone)
+        print("GENDER : ", data.gender)
+        print("TICKET PRICE : ", data.ticketprice)
