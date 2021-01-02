@@ -12,8 +12,6 @@ class CinemaDisplay:
         self.setPrice()
         # self.showSeatMap()
 
-
-
     def showSeatMap(self):
         a = ' '
         for j in range(0,self.columns):

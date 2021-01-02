@@ -11,36 +11,24 @@ class BuyTicket:
         self.records = {}
         self.dbc = DatabaseConection()
 
-
-
     def bookTicket(self):
-
          print("DO YOU WANT TO BOOK A TICKET? ENTER YES")
          response = input()
          if response.lower()=="yes":
-
              print("Enter Row to select your seat")
              row = int(input("Enter row : "))
-
              print("Enter Column to select your seat")
              column = int(input("Enter column : "))
              price = 0
-
-             if self.cd.first_half and self.cd.second_half is not None:
+         if self.cd.first_half and self.cd.second_half is not None:
                  if row-1 in self.cd.first_half:
                      price = self.cd.price1
                  else:
                      price = self.cd.price2
-             else:
-                 price = self.cd.price1
-             print("Your ticket price is : ", price)
-
-             self.confirmBooking(row,column,price)
-
-
-
-
-
+         else:
+             price = self.cd.price1
+         print("Your ticket price is : $", price)
+         self.confirmBooking(row,column,price)
 
     def confirmBooking(self,row,column,price):
         print("Please enter your details:")
