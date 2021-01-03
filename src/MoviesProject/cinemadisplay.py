@@ -46,7 +46,7 @@ class CinemaDisplay:
                 self.second_half = list(range(self.rows//2,self.rows))
             else:
                 self.first_half =list(range(0,(self.rows//2)+1))
-                self.second_half = list(range(self.rows//2,self.rows))
+                self.second_half = list(range((self.rows//2)+1,self.rows))
 
 
 

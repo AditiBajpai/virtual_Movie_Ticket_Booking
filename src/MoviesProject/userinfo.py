@@ -15,8 +15,8 @@ class UserInformation:
             print("The provided ticket number does not exist")
 
     def display_details(self,data):
-        print("NAME : ",data.name )
-        print("AGE : ",data.age)
-        print("PHONE NUMBER : ", data.phone)
-        print("GENDER : ", data.gender)
-        print("TICKET PRICE : ", data.ticketprice)
+        print("NAME :",data.name )
+        print("AGE :",data.age)
+        print("PHONE NUMBER :", data.phone)
+        print("GENDER :", data.gender)
+        print("TICKET PRICE : $", data.ticketprice)
