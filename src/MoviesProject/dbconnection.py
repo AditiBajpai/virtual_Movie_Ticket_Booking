@@ -9,6 +9,10 @@ class DatabaseConection:
         self.conn = None
         self.cursor = None
 
+        # self.conn = msc.connect(user = self.user, password=self.password,
+        #                         host=self.host, database=self.database)
+        # self.cursor = self.conn.cursor()
+
 
         try:
             self.conn = msc.connect(user = self.user, password=self.password,
@@ -38,8 +42,17 @@ class DatabaseConection:
 
     def clear_table(self):
         sql_query = "DELETE FROM userticket;"
-        self.cursor.execute(sql_query)
-        self.conn.commit()
+        try:
+            self.cursor.execute(sql_query)
+            self.conn.commit()
+        except:
+            # pass
+            print("Some error occured while table deletion....!!")
+
+    def close_connection(self):
+        self.conn.close()
+        print("Connection closed Succesfully..!!")
+
 
 
 

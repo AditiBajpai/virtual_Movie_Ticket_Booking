@@ -29,4 +29,5 @@ while True:
     elif output == 4:
         user.display_info()
     elif output == 5:
+        bt.dbc.close_connection()
         break
