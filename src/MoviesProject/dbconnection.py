@@ -2,8 +2,8 @@ import mysql.connector as msc
 
 class DatabaseConection:
     def __init__(self):
-        self.user = 'admin'
-        self.password = 'mysqlpassword@123'
+        self.user = 'aditi'
+        self.password = 'aditi123'
         self.host = 'localhost'
         self.database = 'moviedb'
         self.conn = None
@@ -19,12 +19,13 @@ class DatabaseConection:
                                     host=self.host, database=self.database)
             self.cursor = self.conn.cursor()
             print("Connection Established Sucessfully...!!")
+            self.clear_table()
 
             # print(self.conn)
         except:
             print("Some error ocured while conecting")
 
-        self.clear_table()
+
 
     def insert_records(self,data):
         if self.cursor is not None and self.conn is not None:
