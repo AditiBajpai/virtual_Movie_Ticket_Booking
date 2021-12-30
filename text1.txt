@@ -1,0 +1,14 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 3AD7-CDBE
+
+ Directory of C:\Users\Aditi\Desktop\clonedrepo
+
+31-12-2021  01:08    <DIR>          .
+31-12-2021  01:08    <DIR>          ..
+30-12-2021  13:01             1,928 .gitignore
+30-12-2021  13:01                30 README.md
+30-12-2021  13:01    <DIR>          src
+31-12-2021  01:08                 0 text1.txt
+30-12-2021  13:01    <DIR>          UMLdiagrams
+               3 File(s)          1,958 bytes
+               4 Dir(s)  29,665,468,416 bytes free
